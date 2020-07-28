@@ -1,11 +1,25 @@
 <ng-container *ngFor="let choice of choices; index as i">
-  <label>
-    <input
-      type="radio"
-      id="choice{{ i }}"
-      [value]="choice.name"
-      [checked]="selectedChoice == choice.name"
-      (change)="change(choice.name)"
-    />{{ choice.name }} </label
-  ><br />
+  <div style="margin: 16px;">
+    <div>
+      <label style="margin-right: 16px;">
+        <input
+          type="radio"
+          id="choice{{ i }}"
+          [value]="choice.name"
+          [checked]="selectedChoice == choice.name"
+          (change)="change(choice.name)"
+        />{{ choice.name }}
+      </label>
+    </div>
+    <div>
+      <a [href]="choice.officialURL" target="_blank" rel="noopener noreferrer"
+        >公式サイト</a
+      >//<a
+        [href]="choice.downloadURL"
+        target="_blank"
+        rel="noopener noreferrer"
+        >実装</a
+      >
+    </div>
+  </div>
 </ng-container>
