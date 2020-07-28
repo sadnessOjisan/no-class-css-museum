@@ -8,10 +8,21 @@ type Choices = { name: string }[];
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  choices: Choices = [{ name: 'new.css' }, { name: 'miligram' }];
+  choices: Choices = [
+    { name: 'new.css' },
+    { name: 'milligram' },
+    { name: 'mvp' },
+    { name: 'water-dark' },
+    { name: 'attri-blightlight-green' },
+    { name: 'attri-darkfairy-pink' },
+    { name: 'attri-darkforest-green' },
+    { name: 'attri-lightfairy-pink' },
+    { name: 'attri-midnight-green' },
+  ];
   selectedChoice = this.choices[0].name;
 
-  logMessage(text: string) {
+  setCSSRadioButton(text: string) {
+    console.log(text);
     this.selectedChoice = text;
   }
 }

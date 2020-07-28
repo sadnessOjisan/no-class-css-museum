@@ -1,9 +1,7 @@
-<p>choices works!</p>
 <ng-container *ngFor="let choice of choices; index as i">
   <label>
     <input
       type="radio"
-      name="book"
       id="choice{{ i }}"
       [value]="choice.name"
       [checked]="selectedChoice == choice.name"
