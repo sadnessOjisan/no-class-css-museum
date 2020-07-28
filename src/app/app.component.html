@@ -1,7 +1,26 @@
-<div class="content" role="main">
-  <h1>this is title</h1>
-  <div class="card highlight-card card-small">
-    <span>{{ title }} app is running!</span>
-  </div>
-  <app-choices></app-choices>
-</div>
+<app-choices
+  [choices]="choices"
+  [selectedChoice]="selectedChoice"
+  (selectCSS)="setCSSRadioButton($event)"
+></app-choices>
+<ng-container [ngSwitch]="selectedChoice">
+  <new *ngSwitchCase="'new.css'"></new>
+  <milligram *ngSwitchCase="'milligram'"></milligram>
+  <mvp *ngSwitchCase="'mvp'"></mvp>
+  <water-dark *ngSwitchCase="'water-dark'"></water-dark>
+  <attri-blightlight-green
+    *ngSwitchCase="'attri-blightlight-green'"
+  ></attri-blightlight-green>
+  <attri-darkfairy-pink
+    *ngSwitchCase="'attri-darkfairy-pink'"
+  ></attri-darkfairy-pink>
+  <attri-darkforest-green
+    *ngSwitchCase="'attri-darkforest-green'"
+  ></attri-darkforest-green>
+  <attri-lightfairy-pink
+    *ngSwitchCase="'attri-lightfairy-pink'"
+  ></attri-lightfairy-pink>
+  <attri-midnight-green
+    *ngSwitchCase="'attri-midnight-green'"
+  ></attri-midnight-green>
+</ng-container>

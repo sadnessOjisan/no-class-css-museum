@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 // q: ng generateでOnInit は自動生成されたがなぜ？必須？
 
@@ -10,15 +10,16 @@ type Choices = { name: string }[];
   styleUrls: ['./choices.component.css'],
 })
 export class ChoicesComponent implements OnInit {
-  choices: Choices = [{ name: 'new.css' }, { name: 'miligram' }];
-  schoice = this.choices[0].name;
+  @Input() choices: Choices;
+  @Input() selectedChoice: string;
+  @Output() selectCSS: EventEmitter<string> = new EventEmitter();
 
   // Q: constructorは何に使うの？
   constructor() {}
 
   ngOnInit(): void {}
 
-  show(i: number) {
-    console.log('selected: ' + this.choices[i].name);
+  change(name: string) {
+    this.selectCSS.emit(name);
   }
 }
