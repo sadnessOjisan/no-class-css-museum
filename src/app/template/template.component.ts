@@ -45,6 +45,17 @@ export class WaterDark implements OnInit {
 }
 
 @Component({
+  selector: 'water-light',
+  templateUrl: './template.component.html',
+  styleUrls: ['./waterLight.css'],
+})
+export class WaterLight implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
+
+@Component({
   selector: 'attri-blightlight-green',
   templateUrl: './template.component.html',
   styleUrls: ['./attri-blightlight-green.css'],
