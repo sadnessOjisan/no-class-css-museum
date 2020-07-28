@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import NO_CLASS_CSS_FWS, { CSS_FW_NAME_TYPE } from './NO_CLASS_CSS_FW';
 
-type Choices = { name: string }[];
 @Component({
   // 	そのコンポーネントが他のHTMLから参照されるときのタグ名になる。
   selector: 'app-root',
@@ -8,20 +8,10 @@ type Choices = { name: string }[];
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  choices: Choices = [
-    { name: 'new.css' },
-    { name: 'milligram' },
-    { name: 'mvp' },
-    { name: 'water-dark' },
-    { name: 'attri-blightlight-green' },
-    { name: 'attri-darkfairy-pink' },
-    { name: 'attri-darkforest-green' },
-    { name: 'attri-lightfairy-pink' },
-    { name: 'attri-midnight-green' },
-  ];
+  choices = NO_CLASS_CSS_FWS;
   selectedChoice = this.choices[0].name;
 
-  setCSSRadioButton(text: string) {
+  setCSSRadioButton(text: CSS_FW_NAME_TYPE) {
     console.log(text);
     this.selectedChoice = text;
   }

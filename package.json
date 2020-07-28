@@ -1,6 +1,6 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
+  "name": "no-class-css-museum",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
