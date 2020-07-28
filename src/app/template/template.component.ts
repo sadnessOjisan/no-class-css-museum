@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'new',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new.css'],
 })
 export class New implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -17,6 +18,7 @@ export class New implements OnInit {
   styleUrls: ['./milligram.css'],
 })
 export class Milligram implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -28,6 +30,7 @@ export class Milligram implements OnInit {
   styleUrls: ['./mvp.css'],
 })
 export class MVP implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -39,6 +42,7 @@ export class MVP implements OnInit {
   styleUrls: ['./waterDark.css'],
 })
 export class WaterDark implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -50,6 +54,7 @@ export class WaterDark implements OnInit {
   styleUrls: ['./waterLight.css'],
 })
 export class WaterLight implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -61,6 +66,7 @@ export class WaterLight implements OnInit {
   styleUrls: ['./attri-blightlight-green.css'],
 })
 export class AttriBlightLightGreen implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -72,6 +78,7 @@ export class AttriBlightLightGreen implements OnInit {
   styleUrls: ['./attri-darkfairy-pink.css'],
 })
 export class AttriDarkfairyPink implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -83,6 +90,7 @@ export class AttriDarkfairyPink implements OnInit {
   styleUrls: ['./attri-darkforest-green.css'],
 })
 export class AttriDarkforestGreen implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -94,6 +102,7 @@ export class AttriDarkforestGreen implements OnInit {
   styleUrls: ['./attri-lightfairy-pink.css'],
 })
 export class AttriLightfairyPink implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -105,6 +114,7 @@ export class AttriLightfairyPink implements OnInit {
   styleUrls: ['./attri-midnight-green.css'],
 })
 export class AttriMidnightGreen implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -116,6 +126,7 @@ export class AttriMidnightGreen implements OnInit {
   styleUrls: ['./awsm.css'],
 })
 export class Awsm implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -127,6 +138,7 @@ export class Awsm implements OnInit {
   styleUrls: ['./bahunya.css'],
 })
 export class Bahunya implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -138,6 +150,7 @@ export class Bahunya implements OnInit {
   styleUrls: ['./bullframe.min.css'],
 })
 export class Bullframe implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -149,6 +162,7 @@ export class Bullframe implements OnInit {
   styleUrls: ['./holiday.css'],
 })
 export class Holiday implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -160,6 +174,7 @@ export class Holiday implements OnInit {
   styleUrls: ['./marx.min.css'],
 })
 export class Marx implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -171,6 +186,7 @@ export class Marx implements OnInit {
   styleUrls: ['./retro.css'],
 })
 export class Retro implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -182,6 +198,7 @@ export class Retro implements OnInit {
   styleUrls: ['./sakura.css'],
 })
 export class Sakura implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -193,6 +210,7 @@ export class Sakura implements OnInit {
   styleUrls: ['./sakura-dark.css'],
 })
 export class SakuraDark implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -204,6 +222,7 @@ export class SakuraDark implements OnInit {
   styleUrls: ['./sakura-dark-solarized.css'],
 })
 export class SakuraDarkSolarized implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -215,6 +234,7 @@ export class SakuraDarkSolarized implements OnInit {
   styleUrls: ['./sakura-earthly.css'],
 })
 export class SakuraEarhly implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -226,6 +246,7 @@ export class SakuraEarhly implements OnInit {
   styleUrls: ['./sakura-ink.css'],
 })
 export class SakuraInk implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -237,6 +258,7 @@ export class SakuraInk implements OnInit {
   styleUrls: ['./sakura-vader.css'],
 })
 export class SakuraVader implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -248,6 +270,7 @@ export class SakuraVader implements OnInit {
   styleUrls: ['./splendor.min.css'],
 })
 export class Splendor implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -259,6 +282,7 @@ export class Splendor implements OnInit {
   styleUrls: ['./style.css'],
 })
 export class Style implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -270,6 +294,7 @@ export class Style implements OnInit {
   styleUrls: ['./stylize.min.css'],
 })
 export class Stylize implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -281,6 +306,7 @@ export class Stylize implements OnInit {
   styleUrls: ['./tacit-css.min.css'],
 })
 export class TacitCss implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -292,6 +318,7 @@ export class TacitCss implements OnInit {
   styleUrls: ['./tufte.min.css'],
 })
 export class Tufte implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
@@ -303,6 +330,7 @@ export class Tufte implements OnInit {
   styleUrls: ['./writ.min.css'],
 })
 export class Writ implements OnInit {
+  @Input() selectedCSS: string;
   constructor() {}
 
   ngOnInit(): void {}
