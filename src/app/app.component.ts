@@ -12,6 +12,6 @@ export class AppComponent {
   selectedChoice = this.choices[0].name;
 
   logMessage(text: string) {
-    console.log(`${text}, Hello Angular!`);
+    this.selectedChoice = text;
   }
 }

@@ -3,4 +3,8 @@
   [selectedChoice]="selectedChoice"
   (selectCSS)="logMessage($event)"
 ></app-choices>
-<app-template></app-template>
+<ng-container [ngSwitch]="selectedChoice">
+  <app-template *ngSwitchCase="'new.css'"></app-template>
+  <app-template1 *ngSwitchCase="'miligram'"></app-template1>
+  <mvp *ngSwitchCase="'mvp'"></mvp>
+</ng-container>
