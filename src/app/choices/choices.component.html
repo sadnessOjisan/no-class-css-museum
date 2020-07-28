@@ -1,14 +1,13 @@
 <p>choices works!</p>
 <ng-container *ngFor="let choice of choices; index as i">
   <label>
-    <!-- ［2］ラジオボタンを生成 -->
     <input
       type="radio"
       name="book"
       id="choice{{ i }}"
       [value]="choice.name"
-      [checked]="schoice == choice.name"
-      (change)="show(i)"
+      [checked]="selectedChoice == choice.name"
+      (change)="change(choice.name)"
     />{{ choice.name }} </label
   ><br />
 </ng-container>

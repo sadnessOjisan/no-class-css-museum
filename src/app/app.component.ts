@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+type Choices = { name: string }[];
 @Component({
   // 	そのコンポーネントが他のHTMLから参照されるときのタグ名になる。
   selector: 'app-root',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'my-app';
+  choices: Choices = [{ name: 'new.css' }, { name: 'miligram' }];
+  selectedChoice = this.choices[0].name;
+
+  logMessage(text: string) {
+    console.log(`${text}, Hello Angular!`);
+  }
 }

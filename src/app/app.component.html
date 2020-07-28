@@ -1,7 +1,6 @@
-<div class="content" role="main">
-  <h1>this is title</h1>
-  <div class="card highlight-card card-small">
-    <span>{{ title }} app is running!</span>
-  </div>
-  <app-choices></app-choices>
-</div>
+<app-choices
+  [choices]="choices"
+  [selectedChoice]="selectedChoice"
+  (selectCSS)="logMessage($event)"
+></app-choices>
+<app-template></app-template>
