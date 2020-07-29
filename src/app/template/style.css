@@ -338,7 +338,7 @@ img {
   max-width: 100%;
 }
 
-svg:not(html) {
+svg:not(:root) {
   overflow: hidden;
 }
 

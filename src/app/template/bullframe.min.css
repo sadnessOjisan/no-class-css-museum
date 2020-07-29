@@ -1,4 +1,5 @@
 /*! bullframe.css v3.3.3 | MIT License | https://github.com/marcop135/bullframe.css */
+/*! custom build: bullframe-dark */
 *,
 :after,
 :before {
@@ -353,7 +354,7 @@ audio:not([controls]) {
   display: none;
   height: 0;
 }
-svg:not(html) {
+svg:not(:root) {
   overflow: hidden;
 }
 svg:not([fill]) {
@@ -1657,4 +1658,270 @@ dt {
     transition-duration: 0s !important;
   }
 }
-/*# sourceMappingURL=bullframe.min.css.map */
+html {
+  scrollbar-color: #595959 #111;
+}
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #595959;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: grey;
+}
+::-webkit-scrollbar-track {
+  background-color: #111;
+}
+html {
+  color: #f0f0f0;
+}
+body {
+  background-color: #242424;
+}
+a {
+  color: #66b0ff;
+}
+a:focus,
+a:hover {
+  color: #1a88ff;
+}
+mark {
+  background-color: #cc0;
+}
+ins {
+  background-color: #b3b300;
+}
+[type="date"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="range"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+input[list],
+select,
+select:not([size]):not([multiple]),
+textarea {
+  background-color: #111;
+  border-color: #000;
+  color: #ccc;
+}
+[type="date"]:active,
+[type="date"]:focus,
+[type="datetime-local"]:active,
+[type="datetime-local"]:focus,
+[type="email"]:active,
+[type="email"]:focus,
+[type="month"]:active,
+[type="month"]:focus,
+[type="number"]:active,
+[type="number"]:focus,
+[type="password"]:active,
+[type="password"]:focus,
+[type="range"]:active,
+[type="range"]:focus,
+[type="search"]:active,
+[type="search"]:focus,
+[type="tel"]:active,
+[type="tel"]:focus,
+[type="text"]:active,
+[type="text"]:focus,
+[type="time"]:active,
+[type="time"]:focus,
+[type="url"]:active,
+[type="url"]:focus,
+[type="week"]:active,
+[type="week"]:focus,
+input[list]:active,
+input[list]:focus,
+select:active,
+select:focus,
+select:not([size]):not([multiple]):active,
+select:not([size]):not([multiple]):focus,
+textarea:active,
+textarea:focus {
+  background-color: #111;
+  border-color: #3395ff;
+}
+[type="date"]:active,
+[type="date"]:focus,
+[type="datetime-local"]:active,
+[type="datetime-local"]:focus,
+[type="email"]:active,
+[type="email"]:focus,
+[type="month"]:active,
+[type="month"]:focus,
+[type="number"]:active,
+[type="number"]:focus,
+[type="password"]:active,
+[type="password"]:focus,
+[type="search"]:active,
+[type="search"]:focus,
+[type="tel"]:active,
+[type="tel"]:focus,
+[type="text"]:active,
+[type="text"]:focus,
+[type="time"]:active,
+[type="time"]:focus,
+[type="url"]:active,
+[type="url"]:focus,
+[type="week"]:active,
+[type="week"]:focus,
+input[list]:active,
+input[list]:focus,
+select:active,
+select:focus,
+select:not([size]):not([multiple]):active,
+select:not([size]):not([multiple]):focus,
+textarea:active,
+textarea:focus {
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.5);
+}
+.bf-focused {
+  border-color: #3395ff;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.5) !important;
+}
+.bf-invalid,
+.bf-invalid:focus {
+  color: #ff2626 !important;
+  border-color: #ff2626 !important;
+}
+select:not([size]):not([multiple]) {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5'%3E%3Cpath fill='%23f0f0f0' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+}
+@media screen and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+  [dir="rtl"] select:not([size]):not([multiple]),
+  select:not([size]):not([multiple]),
+  select[dir="rtl"]:not([size]):not([multiple]) {
+    background-image: none;
+  }
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+.bf-btn,
+.bf-btn.bf-disabled,
+[type="button"],
+[type="button"].bf-disabled,
+[type="reset"],
+[type="reset"].bf-disabled,
+[type="submit"],
+[type="submit"].bf-disabled,
+button,
+button.bf-disabled {
+  background: #ccc;
+}
+.bf-btn.bf-disabled:active,
+.bf-btn.bf-disabled:focus,
+.bf-btn.bf-disabled:hover,
+.bf-btn:active,
+.bf-btn:focus,
+.bf-btn:hover,
+[type="button"].bf-disabled:active,
+[type="button"].bf-disabled:focus,
+[type="button"].bf-disabled:hover,
+[type="button"]:active,
+[type="button"]:focus,
+[type="button"]:hover,
+[type="reset"].bf-disabled:active,
+[type="reset"].bf-disabled:focus,
+[type="reset"].bf-disabled:hover,
+[type="reset"]:active,
+[type="reset"]:focus,
+[type="reset"]:hover,
+[type="submit"].bf-disabled:active,
+[type="submit"].bf-disabled:focus,
+[type="submit"].bf-disabled:hover,
+[type="submit"]:active,
+[type="submit"]:focus,
+[type="submit"]:hover,
+button.bf-disabled:active,
+button.bf-disabled:focus,
+button.bf-disabled:hover,
+button:active,
+button:focus,
+button:hover {
+  background: #b3b3b3;
+}
+.bf-btn.bf-disabled:active,
+.bf-btn.bf-disabled:focus,
+.bf-btn:active,
+.bf-btn:focus,
+[type="button"].bf-disabled:active,
+[type="button"].bf-disabled:focus,
+[type="button"]:active,
+[type="button"]:focus,
+[type="reset"].bf-disabled:active,
+[type="reset"].bf-disabled:focus,
+[type="reset"]:active,
+[type="reset"]:focus,
+[type="submit"].bf-disabled:active,
+[type="submit"].bf-disabled:focus,
+[type="submit"]:active,
+[type="submit"]:focus,
+button.bf-disabled:active,
+button.bf-disabled:focus,
+button:active,
+button:focus {
+  box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0.45);
+}
+.bf-btn:active,
+.bf-btn:focus,
+[type="button"]:active,
+[type="button"]:focus,
+[type="reset"]:active,
+[type="reset"]:focus,
+[type="submit"]:active,
+[type="submit"]:focus,
+button:active,
+button:focus {
+  box-shadow: 0 0 0 3px hsla(0, 0%, 100%, 0.45);
+}
+.bf-btn--primary.bf-disabled,
+.bf-btn.bf-btn--primary {
+  background: #007bff;
+}
+.bf-btn--primary.bf-disabled:active,
+.bf-btn--primary.bf-disabled:focus,
+.bf-btn--primary.bf-disabled:hover,
+.bf-btn.bf-btn--primary:active,
+.bf-btn.bf-btn--primary:focus,
+.bf-btn.bf-btn--primary:hover {
+  background: #006fe6;
+}
+.bf-btn--primary.bf-disabled:active,
+.bf-btn--primary.bf-disabled:focus,
+.bf-btn.bf-btn--primary:active,
+.bf-btn.bf-btn--primary:focus {
+  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.75);
+}
+.bf-table td,
+.bf-table th {
+  border-color: #666;
+}
+.bf-table--zebra tbody tr:nth-child(odd),
+.bf-table-responsive--zebra tbody tr:nth-child(odd) {
+  background-color: #333;
+}
+/*# sourceMappingURL=bullframe-dark.min.css.map */

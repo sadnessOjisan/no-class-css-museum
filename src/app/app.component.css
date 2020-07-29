@@ -851,6 +851,7 @@ pre[class*="language-"] {
 }
 
 .choice {
+  z-index: 2;
   width: 20vw;
 }
 
@@ -867,6 +868,7 @@ pre[class*="language-"] {
   }
 
   .template {
+    z-index: 1;
     width: 100vw;
   }
 

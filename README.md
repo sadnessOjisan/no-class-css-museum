@@ -1,10 +1,6 @@
-# co-class-css-museum
+# no-class-css-museum
 
 クラス指定しなくてもいい感じにスタイルが当たるライブラリを比較するサイト
-
-```sh
-$ npm i
-```
 
 ## for dev
 
