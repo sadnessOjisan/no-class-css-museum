@@ -1,108 +1,127 @@
-<h1>wip: No Class CSS Museum</h1>
-選択した No Class CSS の挙動を比較できます。
-<p>
-  <a href="https://css-tricks.com/no-class-css-frameworks/"
-    >No-Class CSS Frameworks</a
-  >に上がっていたもの + αをピックアップしました。
-</p>
-
-<div style="display: flex;">
-  <app-choices
-    [choices]="choices"
-    [selectedChoice]="selectedChoice"
-    (selectCSS)="setCSSRadioButton($event)"
-  ></app-choices>
-  <ng-container [ngSwitch]="selectedChoice">
-    <new *ngSwitchCase="'new.css'" [selectedCSS]="selectedChoice"></new>
-    <milligram
-      *ngSwitchCase="'milligram'"
-      [selectedCSS]="selectedChoice"
-    ></milligram>
-    <mvp *ngSwitchCase="'mvp.css'" [selectedCSS]="selectedChoice"></mvp>
-    <water-dark
-      *ngSwitchCase="'Water.css(dark)'"
-      [selectedCSS]="selectedChoice"
-    ></water-dark>
-    <water-light
-      *ngSwitchCase="'Water.css(light)'"
-      [selectedCSS]="selectedChoice"
-    ></water-light>
-    <attri-blightlight-green
-      *ngSwitchCase="'AttriCSS(Bright Light green)'"
-      [selectedCSS]="selectedChoice"
-    ></attri-blightlight-green>
-    <attri-darkfairy-pink
-      *ngSwitchCase="'AttriCSS(Dark Fairy Pink)'"
-      [selectedCSS]="selectedChoice"
-    ></attri-darkfairy-pink>
-    <attri-darkforest-green
-      *ngSwitchCase="'AttriCSS(Dark Forest Green)'"
-      [selectedCSS]="selectedChoice"
-    ></attri-darkforest-green>
-    <attri-lightfairy-pink
-      *ngSwitchCase="'AttriCSS(Light Fairy Pink)'"
-      [selectedCSS]="selectedChoice"
-    ></attri-lightfairy-pink>
-    <attri-midnight-green
-      *ngSwitchCase="'AttriCSS(Midnight Green)'"
-      [selectedCSS]="selectedChoice"
-    ></attri-midnight-green>
-    <awsm *ngSwitchCase="'awsm.css'" [selectedCSS]="selectedChoice"></awsm>
-    <bahunya *ngSwitchCase="'Bahunya'" [selectedCSS]="selectedChoice"></bahunya>
-    <bullframe
-      *ngSwitchCase="'bullframe.css'"
-      [selectedCSS]="selectedChoice"
-    ></bullframe>
-    <holiday
-      *ngSwitchCase="'holiday.css'"
-      [selectedCSS]="selectedChoice"
-    ></holiday>
-    <marx *ngSwitchCase="'marx'" [selectedCSS]="selectedChoice"></marx>
-    <retro
-      *ngSwitchCase="'markdowncss(Retro)'"
-      [selectedCSS]="selectedChoice"
-    ></retro>
-    <sakura *ngSwitchCase="'sakura'" [selectedCSS]="selectedChoice"></sakura>
-    <sakura-dark
-      *ngSwitchCase="'sakura(dark)'"
-      [selectedCSS]="selectedChoice"
-    ></sakura-dark>
-    <sakura-dark-solarized
-      *ngSwitchCase="'sakura(dark-solarized)'"
-      [selectedCSS]="selectedChoice"
-    ></sakura-dark-solarized>
-    <sakura-earthly
-      *ngSwitchCase="'sakura(earthly)'"
-      [selectedCSS]="selectedChoice"
-    ></sakura-earthly>
-    <sakura-ink
-      *ngSwitchCase="'sakura(ink)'"
-      [selectedCSS]="selectedChoice"
-    ></sakura-ink>
-    <sakura-vader
-      *ngSwitchCase="'sakura(vader)'"
-      [selectedCSS]="selectedChoice"
-    ></sakura-vader>
-    <splendor
-      *ngSwitchCase="'markdowncss(splendor)'"
-      [selectedCSS]="selectedChoice"
-    ></splendor>
-    <style-css
-      *ngSwitchCase="'style.css'"
-      [selectedCSS]="selectedChoice"
-    ></style-css>
-    <stylize
-      *ngSwitchCase="'Stylize.css'"
-      [selectedCSS]="selectedChoice"
-    ></stylize>
-    <tacit-css
-      *ngSwitchCase="'Tacit'"
-      [selectedCSS]="selectedChoice"
-    ></tacit-css>
-    <tufte-css
-      *ngSwitchCase="'tufte-css'"
-      [selectedCSS]="selectedChoice"
-    ></tufte-css>
-    <writ *ngSwitchCase="'Writ'" [selectedCSS]="selectedChoice"></writ>
-  </ng-container>
+<div class="wrapper">
+  <div class="header">
+    <h1 style="margin: 0;">No Class CSS Museum</h1>
+    <p>選択した No Class CSS の挙動を比較できます。</p>
+    <p>
+      <a href="https://css-tricks.com/no-class-css-frameworks/"
+        >No-Class CSS Frameworks</a
+      >に上がっていたもの + αをピックアップしました。
+    </p>
+    <p>
+      (注)new.cssのテンプレートに対して様々なCSS FW
+      を当てています。そのため他のCSS FW
+      では崩れてしまう例(例えばフォームのボタンを横並びに複数置くとmarginがなくて詰まって見えるなど)も含まれています。
+      それはnew.cssでのサポートはそのCSS FWではされていないと解釈してください。
+      (もちろん逆の可能性も然りです。)
+    </p>
+  </div>
+  <div class="contents">
+    <app-choices
+      [choices]="choices"
+      [selectedChoice]="selectedChoice"
+      (selectCSS)="setCSSRadioButton($event)"
+      class="choice"
+    ></app-choices>
+    <div class="template">
+      <ng-container [ngSwitch]="selectedChoice">
+        <new *ngSwitchCase="'new.css'" [selectedCSS]="selectedChoice"></new>
+        <milligram
+          *ngSwitchCase="'milligram'"
+          [selectedCSS]="selectedChoice"
+        ></milligram>
+        <mvp *ngSwitchCase="'mvp.css'" [selectedCSS]="selectedChoice"></mvp>
+        <water-dark
+          *ngSwitchCase="'Water.css(dark)'"
+          [selectedCSS]="selectedChoice"
+        ></water-dark>
+        <water-light
+          *ngSwitchCase="'Water.css(light)'"
+          [selectedCSS]="selectedChoice"
+        ></water-light>
+        <attri-blightlight-green
+          *ngSwitchCase="'AttriCSS(Bright Light green)'"
+          [selectedCSS]="selectedChoice"
+        ></attri-blightlight-green>
+        <attri-darkfairy-pink
+          *ngSwitchCase="'AttriCSS(Dark Fairy Pink)'"
+          [selectedCSS]="selectedChoice"
+        ></attri-darkfairy-pink>
+        <attri-darkforest-green
+          *ngSwitchCase="'AttriCSS(Dark Forest Green)'"
+          [selectedCSS]="selectedChoice"
+        ></attri-darkforest-green>
+        <attri-lightfairy-pink
+          *ngSwitchCase="'AttriCSS(Light Fairy Pink)'"
+          [selectedCSS]="selectedChoice"
+        ></attri-lightfairy-pink>
+        <attri-midnight-green
+          *ngSwitchCase="'AttriCSS(Midnight Green)'"
+          [selectedCSS]="selectedChoice"
+        ></attri-midnight-green>
+        <awsm *ngSwitchCase="'awsm.css'" [selectedCSS]="selectedChoice"></awsm>
+        <bahunya
+          *ngSwitchCase="'Bahunya'"
+          [selectedCSS]="selectedChoice"
+        ></bahunya>
+        <bullframe
+          *ngSwitchCase="'bullframe.css'"
+          [selectedCSS]="selectedChoice"
+        ></bullframe>
+        <holiday
+          *ngSwitchCase="'holiday.css'"
+          [selectedCSS]="selectedChoice"
+        ></holiday>
+        <marx *ngSwitchCase="'marx'" [selectedCSS]="selectedChoice"></marx>
+        <retro
+          *ngSwitchCase="'markdowncss(Retro)'"
+          [selectedCSS]="selectedChoice"
+        ></retro>
+        <sakura
+          *ngSwitchCase="'sakura'"
+          [selectedCSS]="selectedChoice"
+        ></sakura>
+        <sakura-dark
+          *ngSwitchCase="'sakura(dark)'"
+          [selectedCSS]="selectedChoice"
+        ></sakura-dark>
+        <sakura-dark-solarized
+          *ngSwitchCase="'sakura(dark-solarized)'"
+          [selectedCSS]="selectedChoice"
+        ></sakura-dark-solarized>
+        <sakura-earthly
+          *ngSwitchCase="'sakura(earthly)'"
+          [selectedCSS]="selectedChoice"
+        ></sakura-earthly>
+        <sakura-ink
+          *ngSwitchCase="'sakura(ink)'"
+          [selectedCSS]="selectedChoice"
+        ></sakura-ink>
+        <sakura-vader
+          *ngSwitchCase="'sakura(vader)'"
+          [selectedCSS]="selectedChoice"
+        ></sakura-vader>
+        <splendor
+          *ngSwitchCase="'markdowncss(splendor)'"
+          [selectedCSS]="selectedChoice"
+        ></splendor>
+        <style-css
+          *ngSwitchCase="'style.css'"
+          [selectedCSS]="selectedChoice"
+        ></style-css>
+        <stylize
+          *ngSwitchCase="'Stylize.css'"
+          [selectedCSS]="selectedChoice"
+        ></stylize>
+        <tacit-css
+          *ngSwitchCase="'Tacit'"
+          [selectedCSS]="selectedChoice"
+        ></tacit-css>
+        <tufte-css
+          *ngSwitchCase="'tufte-css'"
+          [selectedCSS]="selectedChoice"
+        ></tufte-css>
+        <writ *ngSwitchCase="'Writ'" [selectedCSS]="selectedChoice"></writ>
+      </ng-container>
+    </div>
+  </div>
 </div>
