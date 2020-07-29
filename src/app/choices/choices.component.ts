@@ -10,6 +10,7 @@ type Choices = { name: string }[];
   styleUrls: ['./choices.component.css'],
 })
 export class ChoicesComponent implements OnInit {
+  isOpen: boolean = false;
   @Input() choices: Choices;
   @Input() selectedChoice: string;
   @Output() selectCSS: EventEmitter<string> = new EventEmitter();
@@ -21,5 +22,10 @@ export class ChoicesComponent implements OnInit {
 
   change(name: string) {
     this.selectCSS.emit(name);
+    this.isOpen = false;
+  }
+
+  toggleOpener() {
+    this.isOpen = !this.isOpen;
   }
 }

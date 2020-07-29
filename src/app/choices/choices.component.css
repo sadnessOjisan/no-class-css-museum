@@ -836,7 +836,7 @@ pre[class*="language-"] {
 
 /* /////////////////// */
 
-.wrapper {
+.pc {
   font-family: Inter UI, sans-serif;
   background: #181818;
   color: #eee;
@@ -844,4 +844,30 @@ pre[class*="language-"] {
   overflow: scroll;
   top: 10px;
   position: sticky;
+}
+
+@media screen and (max-width: 1024px) {
+  .pc {
+    display: none;
+  }
+  .wrapper {
+    background: #181818;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+  }
+  button {
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sp {
+    display: none;
+  }
 }

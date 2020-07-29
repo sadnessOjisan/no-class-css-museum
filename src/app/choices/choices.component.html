@@ -1,27 +1,72 @@
-<div class="wrapper">
-  <ng-container *ngFor="let choice of choices; index as i">
-    <div style="margin: 16px;">
-      <div>
-        <label style="margin: 12px 0px; cursor: pointer;">
-          <input
-            type="radio"
-            id="choice{{ i }}"
-            [value]="choice.name"
-            [checked]="selectedChoice == choice.name"
-            (change)="change(choice.name)"
-          />{{ choice.name }}
-        </label>
+<div class="pc">
+  <div class="wrapper">
+    <ng-container *ngFor="let choice of choices; index as i">
+      <div style="margin: 16px;">
+        <div>
+          <label style="margin: 12px 0px; cursor: pointer;">
+            <input
+              type="radio"
+              id="choice{{ i }}"
+              [value]="choice.name"
+              [checked]="selectedChoice == choice.name"
+              (change)="change(choice.name)"
+            />{{ choice.name }}
+          </label>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a
+            [href]="choice.officialURL"
+            target="_blank"
+            rel="noopener noreferrer"
+            >・公式サイト</a
+          >
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a
+            [href]="choice.downloadURL"
+            target="_blank"
+            rel="noopener noreferrer"
+            >・実装</a
+          >
+        </div>
       </div>
-      <div style="margin-bottom: 12px;">
-        <a [href]="choice.officialURL" target="_blank" rel="noopener noreferrer"
-          >・公式サイト</a
-        >
+    </ng-container>
+  </div>
+</div>
+<div class="sp">
+  <button (click)="toggleOpener()"><></button>
+  <div class="wrapper" [hidden]="!isOpen">
+    <button (click)="toggleOpener()">><</button>
+    <ng-container *ngFor="let choice of choices; index as i">
+      <div style="margin: 16px;">
+        <div>
+          <label style="margin: 12px 0px; cursor: pointer;">
+            <input
+              type="radio"
+              id="choice{{ i }}"
+              [value]="choice.name"
+              [checked]="selectedChoice == choice.name"
+              (change)="change(choice.name)"
+            />{{ choice.name }}
+          </label>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a
+            [href]="choice.officialURL"
+            target="_blank"
+            rel="noopener noreferrer"
+            >・公式サイト</a
+          >
+        </div>
+        <div style="margin-bottom: 12px;">
+          <a
+            [href]="choice.downloadURL"
+            target="_blank"
+            rel="noopener noreferrer"
+            >・実装</a
+          >
+        </div>
       </div>
-      <div style="margin-bottom: 12px;">
-        <a [href]="choice.downloadURL" target="_blank" rel="noopener noreferrer"
-          >・実装</a
-        >
-      </div>
-    </div>
-  </ng-container>
+    </ng-container>
+  </div>
 </div>

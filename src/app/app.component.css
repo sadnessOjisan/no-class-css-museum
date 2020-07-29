@@ -860,3 +860,19 @@ pre[class*="language-"] {
   border: solid 1px white;
   background: white;
 }
+
+@media screen and (max-width: 1024px) {
+  .choice {
+    width: 100vw;
+  }
+
+  .template {
+    width: 100vw;
+  }
+
+  .contents {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+}

@@ -36,6 +36,11 @@ type NoClassCssFwType = {
 
 const NO_CLASS_CSS_FWS: NoClassCssFwType[] = [
   {
+    name: 'Bahunya',
+    officialURL: 'https://github.com/kimeiga/bahunya',
+    downloadURL: 'https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css',
+  },
+  {
     name: 'Water.css(dark)',
     officialURL: 'https://watercss.kognise.dev/',
     downloadURL:
@@ -99,11 +104,7 @@ const NO_CLASS_CSS_FWS: NoClassCssFwType[] = [
     downloadURL:
       'https://github.com/igoradamenko/awsm.css/blob/master/dist/awsm.min.css',
   },
-  {
-    name: 'Bahunya',
-    officialURL: 'https://github.com/kimeiga/bahunya',
-    downloadURL: 'https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css',
-  },
+
   {
     name: 'bullframe.css',
     officialURL: 'https://github.com/marcop135/bullframe.css',
