@@ -38,7 +38,7 @@ const NO_CLASS_CSS_FWS: NoClassCssFwType[] = [
   {
     name: 'Bahunya',
     officialURL: 'https://github.com/kimeiga/bahunya',
-    downloadURL: 'https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css',
+    downloadURL: 'https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css',
   },
   {
     name: 'Water.css(dark)',
